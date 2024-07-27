@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var router: Router
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if let mainViewWrapper = router.assemblyBuilder?.createMain(router: router) {
+            mainViewWrapper.view
+        } else {
+            ProgressView("Loading...").onAppear {
+                router.assemblyBuilder = AssemblyModulBuilder()
+                router.initialView()
+            }
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()
