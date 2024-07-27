@@ -11,6 +11,16 @@
 		65F8846F2C553ECF00B837EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8846E2C553ECF00B837EA /* ContentView.swift */; };
 		65F884712C553ED100B837EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F884702C553ED100B837EA /* Assets.xcassets */; };
 		65F884742C553ED100B837EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F884732C553ED100B837EA /* Preview Assets.xcassets */; };
+		65F8847B2C553EE300B837EA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8847A2C553EE300B837EA /* Router.swift */; };
+		65F8847D2C553F0D00B837EA /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8847C2C553F0D00B837EA /* AssemblyBuilder.swift */; };
+		65F8847F2C553FCD00B837EA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8847E2C553FCD00B837EA /* NetworkService.swift */; };
+		65F884822C55405A00B837EA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F884812C55405A00B837EA /* MainViewModel.swift */; };
+		65F884852C55407300B837EA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F884842C55407300B837EA /* MainView.swift */; };
+		65F884872C55409900B837EA /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F884862C55409900B837EA /* Comment.swift */; };
+		65F884892C55412E00B837EA /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F884882C55412E00B837EA /* DetailViewModel.swift */; };
+		65F8848D2C55418E00B837EA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8848C2C55418E00B837EA /* DetailView.swift */; };
+		65F8848F2C55474200B837EA /* ViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8848E2C55474200B837EA /* ViewWrapper.swift */; };
+		65F884912C554D0300B837EA /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F884902C554D0300B837EA /* RouterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		65F8846E2C553ECF00B837EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65F884702C553ED100B837EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65F884732C553ED100B837EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65F8847A2C553EE300B837EA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		65F8847C2C553F0D00B837EA /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		65F8847E2C553FCD00B837EA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		65F884812C55405A00B837EA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		65F884842C55407300B837EA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		65F884862C55409900B837EA /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		65F884882C55412E00B837EA /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		65F8848C2C55418E00B837EA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		65F8848E2C55474200B837EA /* ViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWrapper.swift; sourceTree = "<group>"; };
+		65F884902C554D0300B837EA /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +73,13 @@
 			children = (
 				65F8846C2C553ECF00B837EA /* Lesson14App.swift */,
 				65F8846E2C553ECF00B837EA /* ContentView.swift */,
+				65F8848B2C55414400B837EA /* DetailModule */,
+				65F884832C55405E00B837EA /* MainModule */,
+				65F884802C553FF100B837EA /* ServiceLayer */,
+				65F8847A2C553EE300B837EA /* Router.swift */,
+				65F884902C554D0300B837EA /* RouterView.swift */,
+				65F8848E2C55474200B837EA /* ViewWrapper.swift */,
+				65F8847C2C553F0D00B837EA /* AssemblyBuilder.swift */,
 				65F884702C553ED100B837EA /* Assets.xcassets */,
 				65F884722C553ED100B837EA /* Preview Content */,
 			);
@@ -65,6 +92,33 @@
 				65F884732C553ED100B837EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65F884802C553FF100B837EA /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				65F8847E2C553FCD00B837EA /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		65F884832C55405E00B837EA /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				65F884812C55405A00B837EA /* MainViewModel.swift */,
+				65F884842C55407300B837EA /* MainView.swift */,
+				65F884862C55409900B837EA /* Comment.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		65F8848B2C55414400B837EA /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				65F884882C55412E00B837EA /* DetailViewModel.swift */,
+				65F8848C2C55418E00B837EA /* DetailView.swift */,
+			);
+			path = DetailModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +191,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F8847F2C553FCD00B837EA /* NetworkService.swift in Sources */,
+				65F884852C55407300B837EA /* MainView.swift in Sources */,
 				65F8846F2C553ECF00B837EA /* ContentView.swift in Sources */,
+				65F884912C554D0300B837EA /* RouterView.swift in Sources */,
+				65F8848D2C55418E00B837EA /* DetailView.swift in Sources */,
+				65F8848F2C55474200B837EA /* ViewWrapper.swift in Sources */,
+				65F884872C55409900B837EA /* Comment.swift in Sources */,
+				65F884892C55412E00B837EA /* DetailViewModel.swift in Sources */,
+				65F8847B2C553EE300B837EA /* Router.swift in Sources */,
 				65F8846D2C553ECF00B837EA /* Lesson14App.swift in Sources */,
+				65F8847D2C553F0D00B837EA /* AssemblyBuilder.swift in Sources */,
+				65F884822C55405A00B837EA /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

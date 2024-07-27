@@ -8,10 +8,15 @@
 import SwiftUI
 
 @main
-struct Lesson14App: App {
+struct WbAppSUIApp: App {
+    @StateObject private var router = Router.shared
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RouterView {
+                ContentView()
+            }
         }
     }
 }
+
